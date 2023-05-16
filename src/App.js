@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+
 import './App.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home';
-import Footer from './component/footer';
-import Header from './component/header';
 import About from './pages/about/about';
+import Header from './layout/header';
+import Footer from './layout/footer';
+
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
 
 function App() {
   return (
