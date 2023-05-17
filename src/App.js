@@ -6,11 +6,24 @@ import About from './pages/about/about';
 import Header from './layout/header';
 import Footer from './layout/footer';
 
+import WOW from 'wowjs';
+
 import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
+import { useEffect } from 'react';
+
+
 
 function App() {
+
+  
+  useEffect(() => {
+    new WOW.WOW({
+      live: false
+    }).init();
+  }, [])
+
   return (
     <BrowserRouter>
     <Header/>

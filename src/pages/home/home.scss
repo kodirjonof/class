@@ -1,8 +1,358 @@
-.slider{
-    overflow: hidden;
-    img{
-        width: 100%;
-        height: 80vh;
-        object-fit: cover;
+.home {
+
+
+    .main_title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 36px;
+
+
+        color: #2B2B2B;
+
+        b {
+            color: #E01E1F;
+        }
     }
+
+    .slider {
+        margin-top: 77px;
+        overflow: hidden;
+        margin-bottom: 120px;
+
+        .swiper-pagination {
+            max-width: 1270px;
+            width: 100%;
+            text-align: start;
+            left: 0 !important;
+            right: 0;
+            margin: auto;
+            bottom: 40px !important;
+
+            .swiper-pagination-bullet {
+                transition: all ease 0.5s;
+                width: 99px;
+                height: 4px;
+                background: #8F8F8F;
+                border-radius: 0;
+                opacity: 1;
+            }
+
+            .swiper-pagination-bullet-active {
+                transition: all ease 0.5s;
+                background: #FFFFFF;
+            }
+        }
+
+        .swiper-slide {
+
+            width: 100%;
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, #202124 1.14%, rgba(32, 33, 36, 0.94) 21.93%, rgba(32, 33, 36, 0) 100%);
+                background-position: center;
+                z-index: -1;
+            }
+
+            .container {
+                position: relative;
+                height: 100%;
+
+                .banner_info {
+                    display: table;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0%;
+                    top: 25%;
+                    margin: auto;
+
+                    h1 {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 40px;
+                        line-height: 48px;
+                        margin-bottom: 8px;
+
+
+                        color: #FFFFFF;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        max-width: 60%;
+
+
+                        color: #CCCCCC;
+                    }
+                }
+            }
+        }
+    }
+
+    .advantages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 90px;
+        margin-bottom: 120px;
+
+        .advantages_left {
+
+            .advantages_left_info {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                flex-wrap: wrap;
+                gap: 48px 88px;
+
+                .advantages_left_block {
+                    h2 {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 32px;
+                        padding-bottom: 4px;
+                        border-bottom: 2px solid #E01E1F;
+                        max-width: 91px;
+                        margin-bottom: 16px;
+                        color: #E01E1F;
+
+                    }
+
+                    span {
+                        display: table;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-bottom: 16px;
+
+                        color: #2B2B2B;
+
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        /* or 150% */
+
+
+                        color: #545454;
+
+                    }
+                }
+            }
+        }
+
+        .advantages_right {
+            max-width: 565px;
+            width: 100%;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+    .product_block {
+        margin-bottom: 120px;
+
+        .product_small_block {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .product_big_block {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .product_info_block {
+            &:hover{
+                img{
+                    transition: all 0.4s ease;
+    transform: scale(1.03);
+                }
+            }
+
+            img {
+                transition: all 0.4s ease;
+                margin-bottom: 12px;
+                width: 100%;
+                object-fit: cover;
+                height: 364px;
+            }
+
+            .product_name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    /* identical to box height, or 133% */
+
+
+                    color: #2B2B2B;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
+
+
+                    color: #545454;
+                }
+            }
+        }
+    }
+
+    .map {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .map_right {
+                a {
+                    display: block;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: end;
+
+                    text-decoration-line: underline;
+
+                    color: #E01E1F;
+                }
+
+                .title {
+                    margin-bottom: 4px;
+                    display: block;
+                    text-align: end;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height, or 150% */
+
+
+                    color: #545454;
+                }
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 45vh;
+            display: block;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .brands {
+        margin-bottom: 120px;
+
+        .brands_main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+
+            .brands_block {
+                display: flex;
+                height: 200px;
+
+                .brands_block_left {
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: 300px;
+                    }
+                }
+
+                .brands_block_right {
+                    transition: all ease 0.5s;
+                    padding: 24px;
+                    background: #F5F5F5;
+
+                    span {
+                        transition: all ease 0.5s;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 32px;
+                        display: block;
+                        margin-bottom: 8px;
+
+
+                        color: #2B2B2B;
+
+                    }
+
+                    p {
+                        transition: all ease 0.5s;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        /* or 150% */
+
+
+                        color: #545454;
+                    }
+                }
+                &:hover{
+                   .brands_block_right{
+                    transition: all ease 0.5s;
+                    background: #E01E1F;
+
+                    span{
+                        transition: all ease 0.5s;
+                        color: #fff;
+                    }
+                    p{
+                        transition: all ease 0.5s;
+                        color: #ffff;
+                    }
+                   } 
+                }
+
+            }
+        }
+    }
+
+
 }
