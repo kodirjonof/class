@@ -12,6 +12,8 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import { useEffect } from 'react';
+import ContactPage from './pages/contact/contactPage';
+import Decorclass from './pages/decorclass';
 
 
 
@@ -19,6 +21,7 @@ function App() {
 
   
   useEffect(() => {
+    window.scrollTo(0, 0)
     new WOW.WOW({
       live: false
     }).init();
@@ -27,10 +30,14 @@ function App() {
   return (
     <BrowserRouter>
     <Header/>
+    <main>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
+      <Route path="/contact" element={<ContactPage/>} />
+      <Route path="/decorclass" element={<Decorclass/>} />
     </Routes>
+    </main>
     <Footer/>
   </BrowserRouter>
   );

@@ -16,7 +16,7 @@ const Advantages = () => {
             <div className="advantages_left_block wow lightSpeedIn">
                 <h2>02</h2>
                 <span>Премиальное качество</span>
-                <p>Продукция Loymina не уступает в качестве, а по ряду параметров даже превосходит уровень лучших мировых брендов</p>
+                <p>Продукция ALUCLASS не уступает в качестве, а по ряду параметров даже превосходит уровень лучших мировых брендов</p>
             </div>
             <div className="advantages_left_block wow lightSpeedIn">
                 <h2>03</h2>
@@ -26,7 +26,7 @@ const Advantages = () => {
             <div className="advantages_left_block wow lightSpeedIn">
                 <h2>04</h2>
                 <span>Доступная цена</span>
-                <p>Стоимость продукции фабрики Loymina в несколько раз выгоднее, чем у аналогичных конкурентных брендов на рынке</p>
+                <p>Стоимость продукции фабрики ALUCLASS в несколько раз выгоднее, чем у аналогичных конкурентных брендов на рынке</p>
             </div>
          </div>
 

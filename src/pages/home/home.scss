@@ -1,23 +1,9 @@
 .home {
 
 
-    .main_title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 36px;
 
-
-        color: #2B2B2B;
-
-        b {
-            color: #E01E1F;
-        }
-    }
 
     .slider {
-        margin-top: 77px;
         overflow: hidden;
         margin-bottom: 120px;
 
@@ -181,21 +167,20 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .product_big_block {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            margin-bottom: 40px;
         }
 
         .product_info_block {
-            &:hover{
-                img{
-                    transition: all 0.4s ease;
-    transform: scale(1.03);
+            .product_img_block {
+                padding: 82px 66px;
+                background: #F5F4FA;
+                margin-bottom: 12px;
+                cursor: pointer;
+
+                &:hover {
+                    img {
+                        transition: all 0.4s ease;
+                        transform: scale(1.06);
+                    }
                 }
             }
 
@@ -204,7 +189,9 @@
                 margin-bottom: 12px;
                 width: 100%;
                 object-fit: cover;
-                height: 364px;
+                height: 200px;
+                border-radius: 16px;
+                overflow: hidden;
             }
 
             .product_name {
@@ -222,137 +209,125 @@
 
                     color: #2B2B2B;
                 }
-
-                p {
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 24px;
-                    /* identical to box height, or 150% */
-
-
-                    color: #545454;
-                }
             }
         }
     }
 
-    .map {
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
 
-            .map_right {
-                a {
-                    display: block;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 24px;
-                    text-align: end;
 
-                    text-decoration-line: underline;
 
-                    color: #E01E1F;
+
+
+}
+
+@media (max-width:500px) {
+    .home {
+        
+
+
+        .slider {
+            margin-bottom: 32px;
+
+            .swiper-slide {
+                height: 220px;
+
+                .container {
+                    .banner_info {
+                        top: 32px;
+                        margin: 0;
+                        padding-left: 15px;
+                        padding-right: 15px;
+
+                        h1 {
+                            font-size: 18px;
+                            line-height: 24px;
+                            text-align: center;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            max-width: 100%;
+
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
                 }
+            }
 
-                .title {
-                    margin-bottom: 4px;
-                    display: block;
-                    text-align: end;
-                    text-decoration: none;
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 24px;
-                    /* identical to box height, or 150% */
+            .swiper-pagination {
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 100%;
+                bottom: 12px !important;
 
-
-                    color: #545454;
+                .swiper-pagination-bullet {
+                    width: 40px;
+                    height: 1px;
                 }
             }
         }
 
-        iframe {
-            width: 100%;
-            height: 45vh;
+        .advantages {
             display: block;
-            border: none;
-            outline: none;
-        }
-    }
+            margin-bottom: 32px;
 
-    .brands {
-        margin-bottom: 120px;
+            .advantages_left {
+                .advantages_left_info {
+                    display: block;
 
-        .brands_main {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
+                    .advantages_left_block {
+                        margin-bottom: 16px;
+                        h2 {
+                            text-align: center;
+                            margin-left: auto;
+                            margin-right: auto;
+                            max-width: 91px;
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
 
-            .brands_block {
-                display: flex;
-                height: 200px;
+                        span {
+                            margin-left: auto;
+                            margin-right: auto;
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin-bottom: 4px;
+                        }
 
-                .brands_block_left {
-                    img {
-                        display: block;
-                        height: 100%;
-                        width: 300px;
+                        p {
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                        }
                     }
                 }
-
-                .brands_block_right {
-                    transition: all ease 0.5s;
-                    padding: 24px;
-                    background: #F5F5F5;
-
-                    span {
-                        transition: all ease 0.5s;
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 24px;
-                        line-height: 32px;
-                        display: block;
-                        margin-bottom: 8px;
-
-
-                        color: #2B2B2B;
-
-                    }
-
-                    p {
-                        transition: all ease 0.5s;
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 24px;
-                        /* or 150% */
-
-
-                        color: #545454;
-                    }
-                }
-                &:hover{
-                   .brands_block_right{
-                    transition: all ease 0.5s;
-                    background: #E01E1F;
-
-                    span{
-                        transition: all ease 0.5s;
-                        color: #fff;
-                    }
-                    p{
-                        transition: all ease 0.5s;
-                        color: #ffff;
-                    }
-                   } 
-                }
-
             }
         }
+        .product_block{
+            margin-bottom: 32px;
+            .product_small_block{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .product_info_block{
+                .product_img_block {
+                    padding: 44px 11px;
+                    margin-bottom: 4px;
+                    img{
+                        height: 92px;
+                        margin-bottom: 0;
+                    }
+                    .product_name{
+                        span{
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    } 
+                }
+            } 
+        } 
+
     }
-
-
 }

@@ -1,0 +1,46 @@
+.map {
+    margin-top: 100px;
+
+    .container {
+        .map_top {
+            margin-bottom: 35px;
+        }
+    }
+
+
+    iframe {
+        height: 65vh;
+    }
+}
+
+@media (max-width:500px) {
+    .map {
+        .container {
+            .main_title {
+                margin-bottom: 16px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .map_top {
+                display: block;
+
+                .title {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                a {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        iframe{
+            height: 200px;
+        }
+    }
+}

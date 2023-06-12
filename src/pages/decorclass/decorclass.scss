@@ -1,0 +1,42 @@
+.decorclass {
+    .decorclass_header {
+        padding: 15vh 0;
+        background-image:  url(../../public/images/bg.png), url(../../public/images/decorclass.png),;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+        span {
+            display: block;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 16px;
+
+
+            color: #E01E1F;
+
+            b {
+                color: #FFFFFF;
+            }
+
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            width: 590px;
+            margin-left: auto;
+            margin-right: auto;
+
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+    }
+}
