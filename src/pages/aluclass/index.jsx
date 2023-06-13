@@ -1,12 +1,12 @@
 import React from 'react'
 
-import "./decorclass.scss"
+import "./aluclass.scss"
 import Brands from '../../component/brands'
 
-const Decorclass = () => {
+const Aluclass = () => {
   return (
-    <div className='decorclass'>
-        <div className="decorclass_header">
+    <div className='classes'>
+        <div className="classes_header">
             <span>
             DECOR<b>CLASS</b>
             </span>
@@ -17,4 +17,4 @@ const Decorclass = () => {
   )
 }
 
-export default Decorclass
+export default Aluclass

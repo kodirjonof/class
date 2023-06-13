@@ -1,0 +1,122 @@
+.about {
+    .about_header {
+
+        padding: 88px 0;
+        background: #202124;
+        background-repeat: no-repeat;
+        background-position: right;
+        margin-bottom: 120px;
+
+        span {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 40px;
+            display: block;
+            margin-bottom: 24px;
+
+
+            color: #FFFFFF;
+            max-width: 775px;
+
+            b {
+                background: #E01E1F;
+                padding: 2px 7px;
+            }
+
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+
+            text-transform: lowercase;
+
+            color: #FFFFFF;
+            max-width: 538px;
+        }
+    }
+
+    .about_block {
+        span {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+
+
+            color: #2B2B2B;
+            display: block;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+
+            text-align: center;
+
+            /* Black/80 */
+
+            color: #434240;
+        }
+    }
+}
+@media (max-width:500px) {
+.about{
+   .about_header{
+    margin-bottom: 32px;
+    padding: 32px 0;
+    span{
+        font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+text-align: center;
+
+color: #FFFFFF;
+max-width: 100%;
+margin-bottom: 12px;
+
+    }
+    p{
+        font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+text-align: center;
+    }
+   } 
+   .about_block{
+    span{
+        font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+
+color: #2B2B2B;
+margin-bottom: 16px;
+    }
+    p{
+        font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+    }
+   } 
+}
+
+}

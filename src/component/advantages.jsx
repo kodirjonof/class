@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AdvantagesBanner from "../../public/images/advantage.png"
+import AdvantagesBanner from "../public/images/advantage.png"
 
 const Advantages = () => {
   return (

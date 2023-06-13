@@ -13,7 +13,7 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import { useEffect } from 'react';
 import ContactPage from './pages/contact/contactPage';
-import Decorclass from './pages/decorclass';
+import Aluclass from './pages/aluclass';
 
 
 
@@ -35,7 +35,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<ContactPage/>} />
-      <Route path="/decorclass" element={<Decorclass/>} />
+      <Route path="/decorclass" element={<Aluclass/>} />
     </Routes>
     </main>
     <Footer/>

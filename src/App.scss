@@ -363,6 +363,73 @@ footer {
 .mobil_menu{
   display: none;
 }
+.advantages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+  margin-bottom: 120px;
+
+  .advantages_left {
+
+      .advantages_left_info {
+
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          flex-wrap: wrap;
+          gap: 48px 88px;
+
+          .advantages_left_block {
+              h2 {
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 32px;
+                  padding-bottom: 4px;
+                  border-bottom: 2px solid #E01E1F;
+                  max-width: 91px;
+                  margin-bottom: 16px;
+                  color: #E01E1F;
+
+              }
+
+              span {
+                  display: table;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 18px;
+                  line-height: 24px;
+                  margin-bottom: 16px;
+
+                  color: #2B2B2B;
+
+              }
+
+              p {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+                  /* or 150% */
+
+
+                  color: #545454;
+
+              }
+          }
+      }
+  }
+
+  .advantages_right {
+      max-width: 565px;
+      width: 100%;
+
+      img {
+          object-fit: cover;
+          width: 100%;
+      }
+  }
+}
 
 @media (max-width:500px) {
   .container {
@@ -583,4 +650,40 @@ footer {
       }
     }
   }
+  .advantages {
+    display: block;
+    margin-bottom: 32px;
+
+    .advantages_left {
+        .advantages_left_info {
+            display: block;
+
+            .advantages_left_block {
+                margin-bottom: 16px;
+                h2 {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 91px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                span {
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 4px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 }
