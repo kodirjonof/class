@@ -1,11 +1,12 @@
 .classes {
     .classes_header {
         padding: 15vh 0;
-        background-image:  url(../../public/images/bg.png), url(../../public/images/decorclass.png),;
+        background-image: url(../../public/images/bg.png), url(../../public/images/decorclass.png), ;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
+        margin-bottom: 120px;
 
         span {
             display: block;
@@ -30,13 +31,41 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 32px;
-            width: 590px;
+            max-width: 590px;
             margin-left: auto;
             margin-right: auto;
 
             text-align: center;
 
             color: #FFFFFF;
+        }
+    }
+    .agroclass_header{
+        background-image: url(../../public/images/bg.png), url(../../public/images/agroclass.png), ;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .classes {
+        .classes_header {
+            padding: 31px 0;
+            margin-bottom: 8px;
+
+            span {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         }
     }
 }

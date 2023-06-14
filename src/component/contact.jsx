@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({phone}) => {
   return (
     <div className='map'>
         <div className="container">
@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="map_top">
           <div>
           <span className='title'>Телефон номер</span>
-        <a href='tel:+99897-771-31-51'>+99897-771-31-51</a>
+        <a href={`tel:${phone}`}>{phone}</a>
           </div>
           <div>
           <span className='title'>Электронная почта</span>

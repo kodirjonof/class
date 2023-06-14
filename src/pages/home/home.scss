@@ -91,65 +91,6 @@
             }
         }
     }
-
-    .product_block {
-        margin-bottom: 120px;
-
-        .product_small_block {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-        }
-
-        .product_info_block {
-            .product_img_block {
-                padding: 82px 66px;
-                background: #F5F4FA;
-                margin-bottom: 12px;
-                cursor: pointer;
-
-                &:hover {
-                    img {
-                        transition: all 0.4s ease;
-                        transform: scale(1.06);
-                    }
-                }
-            }
-
-            img {
-                transition: all 0.4s ease;
-                margin-bottom: 12px;
-                width: 100%;
-                object-fit: cover;
-                height: 200px;
-                border-radius: 16px;
-                overflow: hidden;
-            }
-
-            .product_name {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                span {
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 24px;
-                    /* identical to box height, or 133% */
-
-
-                    color: #2B2B2B;
-                }
-            }
-        }
-    }
-
-
-
-
-
-
 }
 
 @media (max-width:500px) {
@@ -202,28 +143,6 @@
             }
         }
 
-        .product_block{
-            margin-bottom: 32px;
-            .product_small_block{
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .product_info_block{
-                .product_img_block {
-                    padding: 44px 11px;
-                    margin-bottom: 4px;
-                    img{
-                        height: 92px;
-                        margin-bottom: 0;
-                    }
-                    .product_name{
-                        span{
-                            font-size: 16px;
-                            line-height: 24px;
-                        }
-                    } 
-                }
-            } 
-        } 
 
     }
 }

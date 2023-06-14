@@ -1,11 +1,7 @@
 import React from 'react'
-import Slider from './slider'
 
-import './home.scss';
-import Advantages from '../../component/advantages';
-import Product from '../../component/product';
-import Brands from '../../component/brands';
-import Contact from '../../component/contact';
+import "./decorclass.scss"
+import Brands from '../../component/brands'
 
 import product1 from "../../public/images/product1.png"
 import product2 from "../../public/images/product2.png"
@@ -22,14 +18,13 @@ import product12 from "../../public/images/product12.png"
 import product13 from "../../public/images/product13.png"
 import product14 from "../../public/images/product14.png"
 import product15 from "../../public/images/product15.png"
-import logo from "../../public/svg/ALUCLASS.svg"
-import logo2 from "../../public/svg/ALUCLASS2.svg"
+import logo from "../../public/svg/DECORCLASS.svg"
+import logo2 from "../../public/svg/DECORCLASS2.svg"
 
-import Header from '../../layout/header';
-import Footer from '../../layout/footer';
-
-
-
+import Product from '../../component/product'
+import Contact from '../../component/contact'
+import Header from '../../layout/header'
+import Footer from '../../layout/footer'
 
 const aluclassProduct = [
   {
@@ -94,20 +89,27 @@ const aluclassProduct = [
   },
 ]
 
-const Home = () => {
+const Decorclass = () => {
+
+
+  
   return (
     <>
     <Header logo={logo}/>
-    <div className='home'>
-        <Slider/>
+    <div className='classes'>
+        <div className="classes_header">
+            <span>
+            DECOR<b>CLASS</b>
+            </span>
+            <p>DECORCLASS - компания по производства Алюминиевая композитная панель, компания по производства Алюминиевая композитная панель,</p>
+        </div>
+        </div>
+        <Product products={aluclassProduct} />
         <Brands/>
-        <Advantages/>
-        <Product products={aluclassProduct}/>
-        <Contact phone={"+99897-771-31-51"}/>
-        <Footer logo={logo2} phone={"+99897-771-31-51"} email={"ALUCLASS"}/>
-    </div>
+        <Contact phone={"+99898-311-88-83"}/>
+    <Footer logo={logo2} phone={"+99898-311-88-83"} email={"DECORCLASS"}/>
     </>
   )
 }
 
-export default Home
+export default Decorclass
