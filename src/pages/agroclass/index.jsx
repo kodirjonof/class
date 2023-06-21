@@ -10,11 +10,15 @@ import AboutAgroclass from './aboutAgroclass'
 import AgroclassProduct from './agroclassProduct'
 
 import "./agroclass.scss"
+import { Helmet } from 'react-helmet'
 
 
 const Agroclass = () => {
   return (
     <>
+    <Helmet>
+    <title>ALUCLASS | Agroclass</title>
+    </Helmet>
     <Header logo={logo}/>
     <div className='classes'>
         <div className="classes_header agroclass_header">

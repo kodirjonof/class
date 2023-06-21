@@ -25,6 +25,7 @@ import Product from '../../component/product'
 import Contact from '../../component/contact'
 import Header from '../../layout/header'
 import Footer from '../../layout/footer'
+import { Helmet } from 'react-helmet'
 
 const aluclassProduct = [
   {
@@ -95,6 +96,9 @@ const Decorclass = () => {
   
   return (
     <>
+    <Helmet>
+    <title>ALUCLASS | Decorclass</title>
+    </Helmet>
     <Header logo={logo}/>
     <div className='classes'>
         <div className="classes_header">

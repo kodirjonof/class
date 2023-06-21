@@ -13,6 +13,7 @@ img {
 body {
   background: #FFFFFF;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar-thumb {
     border-radius: 20px;

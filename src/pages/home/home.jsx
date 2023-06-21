@@ -27,6 +27,7 @@ import logo2 from "../../public/svg/ALUCLASS2.svg"
 
 import Header from '../../layout/header';
 import Footer from '../../layout/footer';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -97,6 +98,9 @@ const aluclassProduct = [
 const Home = () => {
   return (
     <>
+    <Helmet>
+    <title>ALUCLASS | АЛЮКОБОНД ОТ МИРОВОГО БРЕНДА</title>
+    </Helmet>
     <Header logo={logo}/>
     <div className='home'>
         <Slider/>

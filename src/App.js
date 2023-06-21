@@ -3,8 +3,6 @@ import './App.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/home';
 import About from './pages/about/about';
-import Header from './layout/header';
-import Footer from './layout/footer';
 
 import WOW from 'wowjs';
 

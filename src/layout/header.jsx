@@ -4,6 +4,11 @@ import { Link, NavLink } from 'react-router-dom'
 
 const Header = ({logo}) => {
   const [active, setActive] = useState(false)
+
+ function up() {
+  window.scrollTo(0, 0)
+ }
+
   return (
     <header>
         <div className="container">
@@ -14,12 +19,12 @@ const Header = ({logo}) => {
                  <span className='brand_menu'>
                  Бренды
                  <div className="brands_open">
-                  <NavLink to="/decorclass">decorclass</NavLink>
-                  <NavLink to="/agroclass">agroclass</NavLink>
+                  <NavLink onClick={up} to="/decorclass">decorclass</NavLink>
+                  <NavLink onClick={up} to="/agroclass">agroclass</NavLink>
                  </div>
                  </span>
-                 <NavLink to="/about">О компании</NavLink>
-                 <NavLink to="/contact">Контакты</NavLink>
+                 <NavLink onClick={up} to="/about">О компании</NavLink>
+                 <NavLink onClick={up} to="/contact">Контакты</NavLink>
             </div>
             <div className="header_right">
               <span className='language'>Ру</span>

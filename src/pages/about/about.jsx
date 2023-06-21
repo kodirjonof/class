@@ -2,10 +2,21 @@ import React from 'react'
 import "./about.scss"
 import Advantages from '../../component/advantages'
 import Contact from '../../component/contact'
+import Header from '../../layout/header'
+import Footer from '../../layout/footer'
+
+import logo from "../../public/svg/ALUCLASS.svg"
+import logo2 from "../../public/svg/ALUCLASS2.svg"
+import { Helmet } from 'react-helmet'
 
 
 const About = () => {
   return (
+    <>
+        <Helmet>
+    <title>ALUCLASS | О компании</title>
+    </Helmet>
+    <Header logo={logo}/>
     <div className='about'>
       <div className="about_header">
         <div className="container">
@@ -20,6 +31,8 @@ const About = () => {
       </div>
       <Contact/>
     </div>
+    <Footer logo={logo2} phone={"+99897-771-31-51"} email={"ALUCLASS"}/>
+    </>
   )
 }
 

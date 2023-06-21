@@ -10,9 +10,7 @@ const Footer = ({logo, phone, email}) => {
         <a href="/"><img src={logo} alt="logo" /></a>
         <div className="footer_menu">
         <NavLink to="/">Главная</NavLink>
-                 <NavLink to="/brand">Бренды</NavLink>
                  <NavLink to="/about">О компании</NavLink>
-                 <NavLink to="/diller">Наши дилеры</NavLink>
                  <NavLink to="/contact">Контакты</NavLink>
         </div>
         <a href={`tel:${phone}`} className="telephone">{phone}</a>
