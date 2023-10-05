@@ -169,6 +169,34 @@ header {
       }
     }
 
+    .header_right {
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      -webkit-appearance: none;
+      padding: 5px;
+      background-color: #fff; 
+      color: #333; 
+      cursor: pointer;
+      width: 40px;
+      font-size: 14px;
+      text-align: center;
+      
+      
+
+      option {
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #f0f0f0; /* Hover background color */
+          color: #000;
+          }
+      }
+    }
+
     .burger_button {
       display: none;
     }
@@ -195,6 +223,7 @@ header {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+
 
       span {
         display: block;
@@ -598,7 +627,10 @@ footer {
       }
 
       .header_right {
-        display: none;
+        span {
+          color: #4c4c4c;
+          font-size: 14px;
+        }
       }
 
       .burger_button {
@@ -654,6 +686,11 @@ footer {
           transform: rotate(45deg);
         }
       }
+    }
+    .mobile_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
     .mobil_menu {

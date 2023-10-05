@@ -32,7 +32,7 @@ const Agroclass = () => {
         <AgroclassProduct/>
         <Brands/>
     <Contact phone={"+99897-771-31-51"}/>
-        <Footer logo={logo2} phone={"+99897-771-31-51"} email={"AGROCLASS"}/>
+        <Footer logo={logo2} phone={"+99897-771-31-51"} email={"AGROCLASS"}  telegram={"https://t.me/abdulaziz_3151"}/>
     </>
   )
 }

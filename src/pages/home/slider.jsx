@@ -2,12 +2,14 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import {EffectFade, Autoplay, Pagination, Navigation } from "swiper";
+import { useTranslation } from 'react-i18next';
 
 import banner from "../../public/images/banner.png"
 import banner2 from "../../public/images/banner2.png"
 import banner3 from "../../public/images/banner3.png"
 
 const Slider = () => {
+  const [t] = useTranslation("global")
   
   return (
     <div className='slider'>
@@ -35,7 +37,7 @@ const Slider = () => {
       <div className="container">
           <div className="banner_info">
           <h1>Shade vol. II</h1>
-          <p>Вся продукция компании для наших партнеров всегда в наличии и доставляется строго в указанные сроки без срывов поставок</p>
+          <p>{t("banner.info")}</p>
           </div>
           </div>
         </SwiperSlide>
@@ -45,7 +47,7 @@ const Slider = () => {
       <div className="container">
           <div className="banner_info">
           <h1>Dark 777. II</h1>
-          <p>Декоративная стеновая  пвх панель в мужском стиле, если вам нравятся более однотонные цвета, вам это подходить</p>
+          <p>{t("banner.info_2")}</p>
           </div>
           </div>
         </SwiperSlide>
@@ -55,7 +57,7 @@ const Slider = () => {
          <div className="container">
           <div className="banner_info">
           <h1>brown 215. II</h1>
-          <p>Эксклюзивный коричневый цветь подходить для офисов и ресторанов с отличным оттенкой</p>
+          <p>{t("banner.info_3")}</p>
           </div>
           </div>
         </SwiperSlide>

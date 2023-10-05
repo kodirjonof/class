@@ -7,12 +7,14 @@ import Footer from '../../layout/footer'
 import logo from "../../public/svg/ALUCLASS.svg"
 import logo2 from "../../public/svg/ALUCLASS2.svg"
 import { Helmet } from 'react-helmet'
+import { useTranslation } from 'react-i18next'
 
 const ContactPage = () => {
+  const [t] = useTranslation("global")
   return (
     <>
     <Helmet>
-    <title>ALUCLASS | Контакты</title>
+    <title>ALUCLASS | {t("header.contact")}</title>
     </Helmet>
     <Header logo={logo}/>
     <Contact/>

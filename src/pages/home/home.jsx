@@ -108,7 +108,7 @@ const Home = () => {
         <Advantages/>
         <Product products={aluclassProduct}/>
         <Contact phone={"+99897-771-31-51"}/>
-        <Footer logo={logo2} phone={"+99897-771-31-51"} email={"ALUCLASS"}/>
+        <Footer logo={logo2} phone={"+99897-771-31-51"} email={"ALUCLASS"} instagram={"https://instagram.com/aluclass_uzbekistan?igshid=NzZhOTFlYzFmZQ=="} telegram={"https://t.me/tursunov0999"} facebook={"https://www.facebook.com/profile.php?id=61550093140058&mibextid=LQQJ4d"} gmail={"https://mail.google.com/mail/u/0/#search/uzclasses_uz%40mail.ru?compose=new"}/>
     </div>
     </>
   )

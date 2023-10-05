@@ -1,21 +1,24 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Contact = ({phone}) => {
+  const [t] = useTranslation("global")
+
   return (
     <div className='map'>
         <div className="container">
-        <h1 className='main_title'>Контакты</h1>
+        <h1 className='main_title'>{t("header.contact")}</h1>
         <div className="map_top">
           <div>
-          <span className='title'>Телефон номер</span>
+          <span className='title'>{t("contact.num")}</span>
         <a href={`tel:${phone}`}>{phone}</a>
           </div>
           <div>
-          <span className='title'>Электронная почта</span>
+          <span className='title'>{t("contact.mail")}</span>
         <a href='https://goo.gl/maps/tUTr29wSu6x3bRXh8?coh=178573&entry=tt'>webdesigner20021313@gmail.com</a>
           </div>
           <div>
-          <span className='title'>Адрес</span>
+          <span className='title'>{t("contact.address")}</span>
         <a href='https://goo.gl/maps/tUTr29wSu6x3bRXh8?coh=178573&entry=tt'>Бектемирский район</a>
           </div>
         </div>

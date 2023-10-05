@@ -1,13 +1,21 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Header = ({logo}) => {
   const [active, setActive] = useState(false)
+  const [clickedNavLink, setClickedNavLink] = useState("");
+  const [t, i18n] = useTranslation("global")
+  
+  const handlechangelanguage = (lang) => {
+    i18n.changeLanguage(lang)
+  }
 
  function up() {
   window.scrollTo(0, 0)
  }
+
 
   return (
     <header>
@@ -15,24 +23,32 @@ const Header = ({logo}) => {
             <Link to="/" className='header_left'><img src={logo} alt="logo" />
 </Link>
             <div className="header_center">
-                 <NavLink to="/">Главная</NavLink>
+                 <NavLink to="/">{t("header.home")}</NavLink>
                  <span className='brand_menu'>
-                 Бренды
+                 {t("header.brands")}
                  <div className="brands_open">
-                  <NavLink onClick={up} to="/decorclass">decorclass</NavLink>
-                  <NavLink onClick={up} to="/agroclass">agroclass</NavLink>
+                  <NavLink onClick={() => setClickedNavLink("/decorclass")} to="/decorclass" style={{display: clickedNavLink === "/decorclass" ? "none" : "block"}} key={0}>decorclass</NavLink>
+                  <NavLink onClick={() => setClickedNavLink("/agroclass")} to="/agroclass" style={{display: clickedNavLink === "/agroclass" ? "none" : "block"}} key={1}>agroclass</NavLink>
+                  <NavLink onClick={() => setClickedNavLink("/")} to="/" style={{display: clickedNavLink === "/" ? "none" : "block"}} key={2}>alucass</NavLink>
                  </div>
                  </span>
-                 <NavLink onClick={up} to="/about">О компании</NavLink>
-                 <NavLink onClick={up} to="/contact">Контакты</NavLink>
+                 <NavLink onClick={up} to="/about">{t("header.company")}</NavLink>
+                 <NavLink onClick={up} to="/contact">{t("header.contact")}</NavLink>
             </div>
-            <div className="header_right">
-              <span className='language'>Ру</span>
-            </div>
+            <div className='mobile_wrapper'>
+            <select className="header_right" onChange={(e) => handlechangelanguage(e.target.value)}>
+          <option className='language' value={"ru"}>
+            Ру
+          </option>
+          <option className='language' value={"uz"}>
+            UZ
+          </option>
+            </select>
             <div onClick={() => setActive(!active)} className={active ? "burger_button burger_active" : "burger_button"}>
               <span className='burger1'></span>
               <span className='burger2'></span>
               <span className='burger3'></span>
+            </div>
             </div>
             <div className={active ? "mobil_menu mobil_menu_active" : "mobil_menu"}>
               <div className="mobil_menu_header">
