@@ -40,7 +40,15 @@
             color: #FFFFFF;
         }
 
-        
+    }
+    .classes_info {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
     .agroclass_header{
         background-image: url(../../public/images/bg.png), url(../../public/images/agroclass.png), ;
@@ -68,6 +76,15 @@
                 padding-left: 15px;
                 padding-right: 15px;
             }
+        }
+        .classes_info {
+            text-align: center;
+            font-size: 14px;
+            line-height: 32px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 30px;
         }
     }
 }
