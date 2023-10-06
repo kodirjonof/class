@@ -11,9 +11,12 @@ import AgroclassProduct from './agroclassProduct'
 
 import "./agroclass.scss"
 import { Helmet } from 'react-helmet'
+import { useTranslation } from 'react-i18next'
 
 
 const Agroclass = () => {
+  const [t] = useTranslation("global")
+
   return (
     <>
     <Helmet>
@@ -25,9 +28,10 @@ const Agroclass = () => {
             <span>
             AGRO<b>CLASS</b>
             </span>
-            <p>Agroclass Industry - представляет свои высококачественные ленты для капельного орошения.</p>
+            <p>Agroclass Industry - {t("agro.headline")}</p>
         </div>
         </div>
+        <p className='classes_text'>{t("agro.info")}</p>
         <AboutAgroclass/>
         <AgroclassProduct/>
         <Brands/>

@@ -11,13 +11,23 @@
         }
     }
     .agro_product_main2{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
         img{
             display: block;
             width: 100%;
         }
     }
+}
+
+.classes_text {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    max-width: 1360px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 @media (max-width:500px) {
@@ -36,5 +46,15 @@
                 margin-bottom: 15px;
             }
         }
+    }
+
+    .classes_text {
+        font-size: 14px;
+        line-height: normal;
+        text-align: justify;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 0 15px;
     }
 }
