@@ -22,12 +22,19 @@ import product12 from "../../public/images/product12.png"
 import product13 from "../../public/images/product13.png"
 import product14 from "../../public/images/product14.png"
 import product15 from "../../public/images/product15.png"
+import product16 from "../../public/images/product16.png"
+import product17 from "../../public/images/product17.png"
+import product18 from "../../public/images/product18.png"
+import product19 from "../../public/images/product19.png"
+import product20 from "../../public/images/product20.png"
+import product21 from "../../public/images/product21.png"
 import logo from "../../public/svg/ALUCLASS.svg"
 import logo2 from "../../public/svg/ALUCLASS2.svg"
 
 import Header from '../../layout/header';
 import Footer from '../../layout/footer';
 import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -93,13 +100,38 @@ const aluclassProduct = [
    "img": product15,
    "name": "АСР1015",
   },
+  {
+   "img": product16,
+   "name": "АСР1016",
+  },
+  {
+   "img": product17,
+   "name": "АСР1017",
+  },
+  {
+   "img": product18,
+   "name": "АСР1018",
+  },
+  {
+   "img": product19,
+   "name": "АСР1019",
+  },
+  {
+   "img": product20,
+   "name": "АСР M-1",
+  },
+  {
+   "img": product21,
+   "name": "АСР M-2",
+  },
 ]
 
 const Home = () => {
+  const [t] = useTranslation("global")
   return (
     <>
     <Helmet>
-    <title>ALUCLASS | АЛЮКОБОНД ОТ МИРОВОГО БРЕНДА</title>
+    <title>ALUCLASS | {t("home.main")}</title>
     </Helmet>
     <Header logo={logo}/>
     <div className='home'>
@@ -107,6 +139,7 @@ const Home = () => {
         <Brands/>
         <Advantages/>
         <Product products={aluclassProduct}/>
+        <p className='home_info wow lightSpeedIn center'>{t("home.info")}</p>
         <Contact phone={"+99897-771-31-51"}/>
         <Footer logo={logo2} phone={"+99897-771-31-51"} email={"ALUCLASS"} instagram={"https://instagram.com/aluclass_uzbekistan?igshid=NzZhOTFlYzFmZQ=="} telegram={"https://t.me/tursunov0999"} facebook={"https://www.facebook.com/profile.php?id=61550093140058&mibextid=LQQJ4d"} gmail={"https://mail.google.com/mail/u/0/#search/uzclasses_uz%40mail.ru?compose=new"}/>
     </div>

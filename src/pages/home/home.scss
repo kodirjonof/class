@@ -18,7 +18,7 @@
 
             .swiper-pagination-bullet {
                 transition: all ease 0.5s;
-                width: 99px;
+                width: 20px;
                 height: 4px;
                 background: #8F8F8F;
                 border-radius: 0;
@@ -91,6 +91,16 @@
             }
         }
     }
+
+    .home_info {
+        font-size: 18px;
+        color: #545454;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:500px) {
@@ -137,12 +147,18 @@
                 bottom: 12px !important;
 
                 .swiper-pagination-bullet {
-                    width: 40px;
+                    width: 10px;
                     height: 1px;
                 }
             }
         }
 
+        .home_info {
+            font-size: 14px;
+            text-align:  justify;
+            max-width: 1200px;
+            padding: 0 15px;
+        }
 
     }
 }

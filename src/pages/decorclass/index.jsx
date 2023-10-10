@@ -3,21 +3,21 @@ import React from 'react'
 import "./decorclass.scss"
 import Brands from '../../component/brands'
 
-import product1 from "../../public/images/product1.png"
-import product2 from "../../public/images/product2.png"
-import product3 from "../../public/images/product3.png"
-import product4 from "../../public/images/product4.png"
-import product5 from "../../public/images/product5.png"
-import product6 from "../../public/images/product6.png"
-import product7 from "../../public/images/product7.png"
-import product8 from "../../public/images/product8.png"
-import product9 from "../../public/images/product9.png"
-import product10 from "../../public/images/product10.png"
-import product11 from "../../public/images/product11.png"
-import product12 from "../../public/images/product12.png"
-import product13 from "../../public/images/product13.png"
-import product14 from "../../public/images/product14.png"
-import product15 from "../../public/images/product15.png"
+import product1 from "../../public/images/decor.png"
+import product2 from "../../public/images/deco2.png"
+import product3 from "../../public/images/decor3.png"
+import product4 from "../../public/images/decor4.png"
+import product5 from "../../public/images/decor5.png"
+import product6 from "../../public/images/decor6.png"
+import product7 from "../../public/images/decor3.png"
+import product8 from "../../public/images/decor7.png"
+import product9 from "../../public/images/decor8.png"
+import product10 from "../../public/images/decor9.png"
+import product11 from "../../public/images/decor10.png"
+import product12 from "../../public/images/decor11.png"
+import product13 from "../../public/images/decor12.png"
+import product14 from "../../public/images/decor13.png"
+import product15 from "../../public/images/decor14.png"
 import logo from "../../public/svg/DECORCLASS.svg"
 import logo2 from "../../public/svg/DECORCLASS2.svg"
 
@@ -31,63 +31,63 @@ import { useTranslation } from 'react-i18next'
 const aluclassProduct = [
   {
    "img": product1,
-   "name": "АСР1001",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product2,
-   "name": "АСР1002",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product3,
-   "name": "АСР1003",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product4,
-   "name": "АСР1004",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product5,
-   "name": "АСР1005",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product6,
-   "name": "АСР1006",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product7,
-   "name": "АСР1007",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product8,
-   "name": "АСР1008",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product9,
-   "name": "АСР1009",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product10,
-   "name": "АСР1010",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product11,
-   "name": "АСР1011",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product12,
-   "name": "АСР1012",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product13,
-   "name": "АСР1013",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product14,
-   "name": "АСР1014",
+   "name": "20CM FLAT PANEL",
   },
   {
    "img": product15,
-   "name": "АСР1015",
+   "name": "20CM FLAT PANEL",
   },
 ]
 
@@ -108,10 +108,13 @@ const [t] = useTranslation("global")
             </span>
             <p>DECORCLASS - {t("decorclass.caption")}</p>
         </div>
-         <p className='classes_text'>{t("decorclass.info")}</p>
+         <p className='classes_text wow lightSpeedIn center'>{t("decorclass.info")}</p>
         </div>
-        <Product products={aluclassProduct} />
+        <Product class={"decor"} products={aluclassProduct}/>
         <Brands/>
+        <p className='description wow lightSpeedIn center'>
+          {t("decorclass.description")}
+        </p>
         <Contact phone={"+99898-311-88-83"}/>
     <Footer logo={logo2} phone={"+99898-311-88-83"} email={"DECORCLASS"}/>
     </>

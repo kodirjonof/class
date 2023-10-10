@@ -49,10 +49,25 @@
         margin: 0 auto;
         margin-bottom: 30px;
     }
+
     .agroclass_header{
         background-image: url(../../public/images/bg.png), url(../../public/images/agroclass.png), ;
     }
 
+}
+
+.description {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.decor {
+    height: 100% !important;
+    object-fit: contain;
+    height: fit-content;
 }
 
 @media (max-width:500px) {
@@ -82,5 +97,15 @@
             margin: 0 auto;
             margin-bottom: 30px;
         }
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .decor {
+        height: auto !important;
+        object-fit: contain;
+        height: fit-content;
     }
 }

@@ -16,7 +16,7 @@ const About = () => {
   return (
     <>
         <Helmet>
-    <title>ALUCLASS | О компании</title>
+    <title>ALUCLASS | {t("header.company")}</title>
     </Helmet>
     <Header logo={logo}/>
     <div className='about'>

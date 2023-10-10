@@ -27,9 +27,9 @@ const Header = ({logo}) => {
                  <span className='brand_menu'>
                  {t("header.brands")}
                  <div className="brands_open">
-                  <NavLink onClick={() => setClickedNavLink("/decorclass")} to="/decorclass" style={{display: clickedNavLink === "/decorclass" ? "none" : "block"}} key={0}>decorclass</NavLink>
-                  <NavLink onClick={() => setClickedNavLink("/agroclass")} to="/agroclass" style={{display: clickedNavLink === "/agroclass" ? "none" : "block"}} key={1}>agroclass</NavLink>
-                  <NavLink onClick={() => setClickedNavLink("/")} to="/" style={{display: clickedNavLink === "/" ? "none" : "block"}} key={2}>alucass</NavLink>
+                  <NavLink onClick={() => setClickedNavLink("/decorclass")} to="/decorclass" style={{display: clickedNavLink === "/decorclass" ? "none" : "block"}} key={0}>DECORCLASS</NavLink>
+                  <NavLink onClick={() => setClickedNavLink("/agroclass")} to="/agroclass" style={{display: clickedNavLink === "/agroclass" ? "none" : "block"}} key={1}>AGROCLASS</NavLink>
+                  <NavLink onClick={() => setClickedNavLink("/")} to="/" style={{display: clickedNavLink === "/" ? "none" : "block"}} key={2}>ALUCASS</NavLink>
                  </div>
                  </span>
                  <NavLink onClick={up} to="/about">{t("header.company")}</NavLink>
@@ -60,9 +60,9 @@ const Header = ({logo}) => {
               </div>
               <div className="mobil_menu_link">
               <NavLink  onClick={() => setActive(false)} to="/">Главная</NavLink>
-              <span class="brand_menu">Бренды<div class="brands_open"><NavLink  to="/decorclass">decorclass</NavLink><NavLink aria-current="page" class="active" to="/agroclass">agroclass</NavLink></div></span>
-                 <NavLink  onClick={() => setActive(false)} to="/about">О компании</NavLink>
-                 <NavLink  onClick={() => setActive(false)} to="/contact">Контакты</NavLink>
+              <span class="brand_menu">Бренды<div class="brands_open"><NavLink  to="/decorclass">DECORCLASS</NavLink><NavLink  to="/">ALUCASS</NavLink><NavLink aria-current="page" class="active" to="/agroclass">AGROCLASS</NavLink></div></span>
+                 <NavLink  onClick={() => setActive(false)} to="/about">{t("header.company")}</NavLink>
+                 <NavLink  onClick={() => setActive(false)} to="/contact">{t("header.contact")}</NavLink>
               </div>
 
             </div>

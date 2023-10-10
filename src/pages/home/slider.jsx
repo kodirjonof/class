@@ -2,14 +2,18 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import {EffectFade, Autoplay, Pagination, Navigation } from "swiper";
-import { useTranslation } from 'react-i18next';
 
 import banner from "../../public/images/banner.png"
 import banner2 from "../../public/images/banner2.png"
 import banner3 from "../../public/images/banner3.png"
+import banner4 from "../../public/images/slider.jpg"
+import banner5 from "../../public/images/slider2.jpg"
+import banner6 from "../../public/images/slider3.jpg"
+import banner7 from "../../public/images/slider4.jpg"
+import banner8 from "../../public/images/slider5.jpg"
+import banner9 from "../../public/images/slider6.jpg"
 
 const Slider = () => {
-  const [t] = useTranslation("global")
   
   return (
     <div className='slider'>
@@ -34,32 +38,38 @@ const Slider = () => {
         <SwiperSlide style={{ 
       backgroundImage: `url(${banner})` 
     }}>
-      <div className="container">
-          <div className="banner_info">
-          <h1>Shade vol. II</h1>
-          <p>{t("banner.info")}</p>
-          </div>
-          </div>
         </SwiperSlide>
         <SwiperSlide style={{ 
       backgroundImage: `url(${banner3})` 
     }}>
-      <div className="container">
-          <div className="banner_info">
-          <h1>Dark 777. II</h1>
-          <p>{t("banner.info_2")}</p>
-          </div>
-          </div>
         </SwiperSlide>
         <SwiperSlide style={{ 
       backgroundImage: `url(${banner2})` 
     }}>
-         <div className="container">
-          <div className="banner_info">
-          <h1>brown 215. II</h1>
-          <p>{t("banner.info_3")}</p>
-          </div>
-          </div>
+        </SwiperSlide>
+        <SwiperSlide style={{ 
+      backgroundImage: `url(${banner4})` 
+    }}>
+        </SwiperSlide>
+        <SwiperSlide style={{ 
+      backgroundImage: `url(${banner6})` 
+    }}>
+        </SwiperSlide>
+        <SwiperSlide style={{ 
+      backgroundImage: `url(${banner5})` 
+    }}>
+        </SwiperSlide>
+        <SwiperSlide style={{ 
+      backgroundImage: `url(${banner8})` 
+    }}>
+        </SwiperSlide>
+        <SwiperSlide style={{ 
+      backgroundImage: `url(${banner7})` 
+    }}>
+        </SwiperSlide>
+        <SwiperSlide style={{ 
+      backgroundImage: `url(${banner9})` 
+    }}>
         </SwiperSlide>
       </Swiper>
     </div>
