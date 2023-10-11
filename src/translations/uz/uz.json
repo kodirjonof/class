@@ -62,5 +62,8 @@
         "text6":"U soatiga 2 litr tomizadi, tomizgich tiqilib qolmaydi.",
         "photo":"Foto",
         "gallery":"galereya"
+    },
+    "factory": {
+        "title":"Bizning fabrikamiz"
     }
 }
