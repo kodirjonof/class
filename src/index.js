@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ru from "./translations/ru/ru.json"
 import uz from "./translations/uz/uz.json"
+import en from "./translations/en/en.json"
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
@@ -16,6 +17,9 @@ i18next.init({
     },
     uz: {
       global: uz
+    },
+    en: {
+      global: en
     }
   }
 });

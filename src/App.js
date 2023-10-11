@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import ContactPage from './pages/contact/contactPage';
 import Decorclass from './pages/decorclass';
 import Agroclass from './pages/agroclass';
+import Factory from './pages/factory/factory';
 
 
 
@@ -35,6 +36,7 @@ function App() {
       <Route path="/contact" element={<ContactPage/>} />
       <Route path="/decorclass" element={<Decorclass/>} />
       <Route path="/agroclass" element={<Agroclass/>} />
+      <Route path="/factory" element={<Factory/>} />
     </Routes>
     </main>
   </BrowserRouter>
