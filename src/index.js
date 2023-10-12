@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ru from "./translations/ru/ru.json"
-import uz from "./translations/uz/uz.json"
-import en from "./translations/en/en.json"
+import ru from "./locales/ru/translation.json"
+import uz from "./locales/uz/translation.json"
+import en from "./locales/en/translation.json"
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: "ru",
+  lng: localStorage.getItem("lang") || "ru",
   resources: {
     ru: {
       global: ru

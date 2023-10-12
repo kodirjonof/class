@@ -93,7 +93,7 @@ const aluclassProduct = [
 
 const Decorclass = () => {
 
-const [t] = useTranslation("global")
+  const [t] = useTranslation("global")
   
   return (
     <>
@@ -110,7 +110,7 @@ const [t] = useTranslation("global")
         </div>
          <p className='classes_text wow lightSpeedIn center'>{t("decorclass.info")}</p>
         </div>
-        <Product class={"decor"} products={aluclassProduct}/>
+        <Product className={"decor"} products={aluclassProduct}/>
         <Brands/>
         <p className='description wow lightSpeedIn center'>
           {t("decorclass.description")}

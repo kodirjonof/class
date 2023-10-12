@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 
 
-const Product = ({products, decor}) => {
+const Product = ({products, className}) => {
     const [t] = useTranslation("global")
   return (
     <div className='product_block container'>
@@ -12,7 +12,7 @@ const Product = ({products, decor}) => {
             {products.map((item, index) => (
                 <div className="product_info_block" key={index}>
                     <div className="product_img_block">
-                <img src={item.img} alt="" className='decor'/>
+                <img src={item.img} alt="" className={className}/>
                 </div>
                 <div className="product_name">
                     <span className='wow lightSpeedIn center'>{item.name}</span>

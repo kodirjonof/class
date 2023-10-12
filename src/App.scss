@@ -161,9 +161,87 @@ header {
           margin: auto;
         }
       }
+      
 
       .active {
         color: #E01E1F;
+      }
+    }
+
+       
+    .language {
+      position: relative;
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #4c4c4c;
+
+      .language_block {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 16px;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .language_select {
+        min-width: 60px;
+        width: 100%;
+        transition: all ease 0.2s;
+        visibility: hidden;
+        padding: 0 4px;
+        z-index: 12;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 150%;
+        background: #ffffff;
+        box-shadow: 0px 3px 15px rgba(29, 57, 169, 0.17);
+        border-radius: 0px 0px 5px 5px;
+
+        .language_select_block {
+          position: relative;
+          display: block;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          border-bottom: 1px solid #eef0f5;
+          color: #4c4c4c;
+          padding: 9px 5px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 12px;
+            left: 9px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+        }
+
+        .none {
+          display: none;
+        }
+      }
+
+      &:hover {
+        .language_select {
+          visibility: visible;
+        }
       }
     }
 
@@ -595,7 +673,6 @@ footer {
     width: 100%;
     padding-left: 15px !important;
     padding-right: 15px !important;
-    overflow-y: hidden;
   }
 
   main {
@@ -615,6 +692,13 @@ footer {
 
       .header_center {
         display: none;
+      }
+
+      .language {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        display: table;
       }
 
       .header_left {
@@ -928,6 +1012,7 @@ footer {
         margin-bottom: 4px;
 
         img {
+          height: auto !important;
           min-height: 92px;
           object-fit: contain;
           margin-bottom: 0;
