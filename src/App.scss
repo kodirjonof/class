@@ -1012,8 +1012,7 @@ footer {
         margin-bottom: 4px;
 
         img {
-          height: auto !important;
-          min-height: 92px;
+          max-height: 92px;
           object-fit: contain;
           margin-bottom: 0;
         }

@@ -115,22 +115,16 @@ const Header = ({ logo }) => {
         </div>
         <div className={active ? "mobil_menu mobil_menu_active" : "mobil_menu"}>
           <div className="mobil_menu_header">
-            <svg
-              width="88"
-              height="13"
-              viewBox="0 0 88 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {/* SVG path code */}
-            </svg>
+          <Link to="/" className="header_left">
+          <img src={logo} alt="logo" />
+        </Link>
           </div>
           <div className="mobil_menu_link">
             <NavLink onClick={() => setActive(false)} to="/">
-              Главная
+              {t("header.home")}
             </NavLink>
             <span className="brand_menu">
-              Бренды
+              {t("header.brands")}
               <div className="brands_open">
                 <NavLink onClick={() => setActive(false)} to="/decorclass">
                   DECORCLASS
@@ -140,14 +134,10 @@ const Header = ({ logo }) => {
                 </NavLink>
                 <NavLink
                   aria-current="page"
-                  className="active"
                   onClick={() => setActive(false)}
                   to="/agroclass"
                 >
                   AGROCLASS
-                </NavLink>
-                <NavLink onClick={() => setActive(false)} to="/factory">
-                  FACTORY
                 </NavLink>
               </div>
             </span>
