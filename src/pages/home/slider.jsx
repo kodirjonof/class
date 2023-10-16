@@ -3,9 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import {EffectFade, Autoplay, Pagination, Navigation } from "swiper";
 
-import banner from "../../public/images/banner.png"
-import banner2 from "../../public/images/banner2.png"
-import banner3 from "../../public/images/banner3.png"
 import banner4 from "../../public/images/slider.jpg"
 import banner5 from "../../public/images/slider2.jpg"
 import banner6 from "../../public/images/slider3.jpg"
@@ -35,18 +32,6 @@ const Slider = () => {
         modules={[EffectFade, Autoplay,  Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide style={{ 
-      backgroundImage: `url(${banner})` 
-    }}>
-        </SwiperSlide>
-        <SwiperSlide style={{ 
-      backgroundImage: `url(${banner3})` 
-    }}>
-        </SwiperSlide>
-        <SwiperSlide style={{ 
-      backgroundImage: `url(${banner2})` 
-    }}>
-        </SwiperSlide>
         <SwiperSlide style={{ 
       backgroundImage: `url(${banner4})` 
     }}>
