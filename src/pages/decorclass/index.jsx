@@ -113,9 +113,6 @@ const Decorclass = () => {
 			</div>
 			<Product className={'decor'} products={aluclassProduct} />
 			<Brands />
-			{/* <p className='description wow lightSpeedIn center'>
-				{t('decorclass.description')}
-			</p> */}
 			<div className='texts container'>
 				<span className='text_wrap wow lightSpeedIn center'>
 					<h4>{t('decorclass.key')}</h4>

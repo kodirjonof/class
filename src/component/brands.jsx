@@ -13,7 +13,7 @@ const Brands = () => {
          <div className="brands_main">
             <NavLink className="brands_block wow bounceInLeft" to={"/"}>
                 <span>ALUCLASS</span>
-                <p>ALUCLASS - {t("brands.info")},</p>
+                <p>ALUCLASS - {t("brands.info")}</p>
             </NavLink>
             <NavLink className="brands_block wow bounceInCenter" to={"/agroclass"}>
                 <span>AGROCLASS</span>
