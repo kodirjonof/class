@@ -1,69 +1,86 @@
 {
-    "header": {
-    "home":"Home",
-    "brands":"Brands",
-    "company":"About",
-    "contact":"Contacts"
-    },
-    "home":{
-    "main":"ALUCOBOND FROM THE WORLD BRAND",
-    "info":"PROPERTIES OF ALUMINUM COMPOSITE PANELS Aluminum composite panels are a modern material for façade cladding, interior design, outdoor advertising, etc. The aluminum panel is a layered sandwich of two aluminum sheets with polymer sheets in between. The back sheet of the panel is coated with an anti-corrosion protective composition, and the front sheet is coated with PVDF enamel, which gives the panel mechanical and chemical resistance, as well as resistance to UV radiation and high humidity. ACP in Tashkent is produced with a thickness of 4 mm and standard sizes up to 1220x2440mm. Non-standard sized panels can be manufactured on request. Advantages of aluminum composite panels: Elegant appearance; Durability; Reliability and strength; Flexibility; Wide range of colors; Resistance to extreme temperature fluctuations; Good sound insulation properties; Long service life."
-    },
-    "brands":{
-    "our":"Our",
-    "brend":"brands",
-    "info":"ALUCLASS manufacturing company, ALUCLASS manufacturing company",
-    "industry":"presents its high-quality drip irrigation tapes.",
-    "decorclass":"ALUCLASS manufacturing company, ALUCLASS manufacturing company,"
-    },
-    "advantages":{
-    "caption":"Benefits of cooperation",
-    "with":"cooperating with us",
-    "title":"Reliable partnership",
-    "info":"All company products for our partners are always in stock and delivered strictly within the specified timeframes without any delays",
-    "quality":"Premium quality",
-    "info_2":"ALUCLASS products are on par with, and in some parameters even exceed the quality level of the best global brands",
-    "exclusive":"Exclusive design",
-    "info_3":"Wallpapers, paints, murals and frescoes are produced in collaboration with world-famous designers and artists",
-    "price":"Affordable price",
-    "info_4":"The cost of ALUCLASS factory products is several times more profitable than similar competing brands in the market"
-    },
-    "products": {
-    "ours":"Our",
-    "goods":"products"
-    },
-    "contact":{
-    "num":"Phone number",
-    "mail":"Email",
-    "address":"Address"
-    },
-    "about": {
-    "title":"ALUCLASS with more than many years of history",
-    "text":"professionally engaged in",
-    "info":"with more than many years of history is professionally engaged in business in the field of new finishing materials, including equipment for professional machines and raw materials, such as PVC panels, hot stamping foils for plastic panels, PVC film, etc.",
-    "us":"About us",
-    "description":"COMPANY INFO — Over the years of its existence, ALUCLASS has proven itself to be a reliable and responsible manufacturer whose products you can trust. Mission To create new standards and trends. To be responsible for the development of industrialization. To change traditional ways of doing business and principles of interaction. To constantly increase the efficiency of the company for the sake of our customers, employees, partners and society. Vision By 2025, become a geographically diversified conglomerate with an active client base in 20 countries around the world. Become a symbol of industrialization in Uzbekistan that will increase value for its customers, shareholders and partners Values ​​Customer focus - no matter how technologically advanced the base and innovations are, we build them around the customer, not the other way around."
-    },
-    "decorclass":{
-    "caption":"ALUCLASS manufacturing company, ALUCLASS manufacturing company,",
-    "info":"Welcome to the 'Decorclass' website - your reliable source of stylish and functional decorative PVC panels! Our unique designs and high quality materials make our panels the ideal solution for interior transformation. Combining elegance and practicality, our PVC decorative panels add sophistication to any room. Whether your style is modern minimalism or classic elegance, we have panels to suit your taste. The benefits of our panels include easy installation, durability and easy care. Not only do they enhance the visual perception of your space, but they can also conceal wall flaws, creating a harmonious environment. Allow 'Decorclass' to make your home or business a place of inspiration and style. Browse our range and start your interior renewal journey today!",
-    "description":"Company name: DecorClass Origin: PVC resin and calcium powder Material: Sheet Color: any color in our catalog Form: Technical Specifications: Thickness -5mm-9mm Width-200mm 250mm 300mm 595/603mm Length-any length required by customer Packing details: 10pcs/carton Polyethylene film or box Shipping details: Advantage: our product is waterproof and fireproof, easy to install and clean."
-    },
-    "agro":{
-    "headline":"presents its high-quality drip irrigation tapes.",
-    "info":"Welcome to the 'Agroclass' website - your reliable partner in innovative drip irrigation systems! We specialize in the production of high quality drip tape, providing advanced solutions for efficient agriculture. Our drip tape is an intelligent solution for optimal use of water resources and maximizing yields. Thanks to the even distribution of moisture and nutrients, you can achieve high productivity with minimal expenditure. The benefits of working with us include the engineering excellence of our products, the reliability and durability of the drip tape, as well as our commitment to innovation. We pride ourselves that our solutions help agricultural enterprises increase yields and reduce environmental impacts. Trust 'Agroclass' to create an efficient drip irrigation system that promotes healthy plant growth and resource optimization. Proceed to exploring our range and start the path to improving your agriculture today!",
-    "our":"Our",
-    "product":"product",
-    "text":"Prices are affordable, tapes are excellent quality.",
-    "text2":"Distance to emitter 15-30cm (can be changed on request)",
-    "text3":"Thickness 0.18-0.24mm (can be used on request)",
-    "text4":"Roll 2,000m (can be changed on request)",
-    "text5":"For 16 pipe (can be replaced on request)",
-    "text6":"Drips 2 liters per hour, drippers don't clog.",
-    "photo":"Photo",
-    "gallery":"gallery"
-    },
-    "factory": {
-    "title":"Our factories"
-    }
-    }
+	"header": {
+		"home": "Home",
+		"brands": "Brands",
+		"company": "About",
+		"contact": "Contacts"
+	},
+	"home": {
+		"main": "ALUCOBOND FROM THE WORLD BRAND",
+		"info": "PROPERTIES OF ALUMINUM COMPOSITE PANELS Aluminum composite panels are a modern material for façade cladding, interior design, outdoor advertising, etc. The aluminum panel is a layered sandwich of two aluminum sheets with polymer sheets in between. The back sheet of the panel is coated with an anti-corrosion protective composition, and the front sheet is coated with PVDF enamel, which gives the panel mechanical and chemical resistance, as well as resistance to UV radiation and high humidity. ACP in Tashkent is produced with a thickness of 4 mm and standard sizes up to 1220x2440mm. Non-standard sized panels can be manufactured on request. Advantages of aluminum composite panels: Elegant appearance; Durability; Reliability and strength; Flexibility; Wide range of colors; Resistance to extreme temperature fluctuations; Good sound insulation properties; Long service life."
+	},
+	"brands": {
+		"our": "Our",
+		"brend": "brands",
+		"info": "ALUCLASS manufacturing company, ALUCLASS manufacturing company",
+		"industry": "presents its high-quality drip irrigation tapes.",
+		"decorclass": "pvx decorative panels,, ALUCLASS manufacturing company,"
+	},
+	"advantages": {
+		"caption": "Benefits of cooperation",
+		"with": "cooperating with us",
+		"title": "Reliable partnership",
+		"info": "All company products for our partners are always in stock and delivered strictly within the specified timeframes without any delays",
+		"quality": "Premium quality",
+		"info_2": "ALUCLASS products are on par with, and in some parameters even exceed the quality level of the best global brands",
+		"exclusive": "Exclusive design",
+		"info_3": "Wallpapers, paints, murals and frescoes are produced in collaboration with world-famous designers and artists",
+		"price": "Affordable price",
+		"info_4": "The cost of ALUCLASS factory products is several times more profitable than similar competing brands in the market"
+	},
+	"products": {
+		"ours": "Our",
+		"goods": "products"
+	},
+	"contact": {
+		"num": "Phone number",
+		"mail": "Email",
+		"address": "Address"
+	},
+	"about": {
+		"title": "ALUCLASS with more than many years of history",
+		"text": "professionally engaged in",
+		"info": "with more than many years of history is professionally engaged in business in the field of new finishing materials, including equipment for professional machines and raw materials, such as PVC panels, hot stamping foils for plastic panels, PVC film, etc.",
+		"us": "About us",
+		"description": "COMPANY INFO — Over the years of its existence, ALUCLASS has proven itself to be a reliable and responsible manufacturer whose products you can trust. Mission To create new standards and trends. To be responsible for the development of industrialization. To change traditional ways of doing business and principles of interaction. To constantly increase the efficiency of the company for the sake of our customers, employees, partners and society. Vision By 2025, become a geographically diversified conglomerate with an active client base in 20 countries around the world. Become a symbol of industrialization in Uzbekistan that will increase value for its customers, shareholders and partners Values ​​Customer focus - no matter how technologically advanced the base and innovations are, we build them around the customer, not the other way around."
+	},
+	"decorclass": {
+		"caption": "ALUCLASS manufacturing company, ALUCLASS manufacturing company,",
+		"info": "Welcome to the 'Decorclass' website - your reliable source of stylish and functional decorative PVC panels! Our unique designs and high quality materials make our panels the ideal solution for interior transformation. Combining elegance and practicality, our PVC decorative panels add sophistication to any room. Whether your style is modern minimalism or classic elegance, we have panels to suit your taste. The benefits of our panels include easy installation, durability and easy care. Not only do they enhance the visual perception of your space, but they can also conceal wall flaws, creating a harmonious environment. Allow 'Decorclass' to make your home or business a place of inspiration and style. Browse our range and start your interior renewal journey today!",
+		"key": "Company name:",
+		"key2": "Place of origin:",
+		"key3": "Material:",
+		"key4": "Shape:",
+		"key5": "Color:",
+		"key6": "Technical Specifications:",
+		"key7": "Packaging Details:",
+		"key8": "Delivery Details:",
+		"key9": "Advantages:",
+		"value": "DecorClass",
+		"value2": "",
+		"value3": "PVC resin and calcium powder",
+		"value4": "Sheet",
+		"value5": "You can choose any color from our catalog",
+		"value6": "Thickness - 5mm-9mm, Width - 200mm, 250mm, 300mm, 595/603mm, Length - any length as per customer's preference",
+		"value7": "10 pieces/pack, Polyethylene film or box",
+		"value8": "",
+		"value9": "Our product is waterproof and fire-resistant, easy to install and clean."
+	},
+	"agro": {
+		"headline": "presents its high-quality drip irrigation tapes.",
+		"info": "Welcome to the 'Agroclass' website - your reliable partner in innovative drip irrigation systems! We specialize in the production of high quality drip tape, providing advanced solutions for efficient agriculture. Our drip tape is an intelligent solution for optimal use of water resources and maximizing yields. Thanks to the even distribution of moisture and nutrients, you can achieve high productivity with minimal expenditure. The benefits of working with us include the engineering excellence of our products, the reliability and durability of the drip tape, as well as our commitment to innovation. We pride ourselves that our solutions help agricultural enterprises increase yields and reduce environmental impacts. Trust 'Agroclass' to create an efficient drip irrigation system that promotes healthy plant growth and resource optimization. Proceed to exploring our range and start the path to improving your agriculture today!",
+		"our": "Our",
+		"product": "product",
+		"text": "Prices are affordable, tapes are excellent quality.",
+		"text2": "Distance to emitter 15-30cm (can be changed on request)",
+		"text3": "Thickness 0.18-0.24mm (can be used on request)",
+		"text4": "Roll 2,000m (can be changed on request)",
+		"text5": "For 16 pipe (can be replaced on request)",
+		"text6": "Drips 2 liters per hour, drippers don't clog.",
+		"photo": "Photo",
+		"gallery": "gallery"
+	},
+	"factory": {
+		"title": "Our factories"
+	}
+}

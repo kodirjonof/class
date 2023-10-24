@@ -1,111 +1,149 @@
 .classes {
-    .classes_header {
-        padding: 15vh 0;
-        background-image: url(../../public/images/bg.png), url(../../public/images/decorclass.png), ;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        margin-bottom: 120px;
+	.classes_header {
+		padding: 15vh 0;
+		background-image: url(../../public/images/bg.png),
+			url(../../public/images/decorclass.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		margin-bottom: 120px;
 
-        span {
-            display: block;
-            text-align: center;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 40px;
-            line-height: 48px;
-            margin-bottom: 16px;
+		span {
+			display: block;
+			text-align: center;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 16px;
 
+			color: #e01e1f;
 
-            color: #E01E1F;
+			b {
+				color: #ffffff;
+			}
+		}
 
-            b {
-                color: #FFFFFF;
-            }
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 32px;
+			max-width: 590px;
+			margin-left: auto;
+			margin-right: auto;
 
-        }
+			text-align: center;
 
-        p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 32px;
-            max-width: 590px;
-            margin-left: auto;
-            margin-right: auto;
+			color: #ffffff;
+		}
+	}
+	.classes_text {
+		font-size: 24px;
+		line-height: 32px;
+		text-align: justify;
+		max-width: 830px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
 
-            text-align: center;
-
-            color: #FFFFFF;
-        }
-
-    }
-    .classes_text {
-        font-size: 24px;
-        line-height: 32px;
-        text-align: justify;
-        max-width: 830px;
-        margin: 0 auto;
-        margin-bottom: 30px;
-    }
-
-    .agroclass_header{
-        background-image: url(../../public/images/bg.png), url(../../public/images/agroclass.png), ;
-    }
-
+	.agroclass_header {
+		background-image: url(../../public/images/bg.png),
+			url(../../public/images/agroclass.png);
+	}
 }
 
-.description {
-    font-size: 18px;
-    line-height: 20px;
-    text-align: center;
-    max-width: 1350px;
-    margin: 0 auto;
+.texts {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+
+	.text_wrap {
+		display: flex;
+		align-items: flex-start;
+		gap: 30px;
+		margin-bottom: 10px;
+
+		h4 {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 26px;
+			color: #2b2b2b;
+		}
+
+		.description {
+			color: #545454;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px;
+		}
+	}
 }
 
 .decor {
-    height: 100% !important;
-    object-fit: contain;
-    height: fit-content;
+	height: 100% !important;
+	object-fit: contain;
+	height: fit-content;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
+	.classes {
+		.classes_header {
+			padding: 31px 0;
+			margin-bottom: 8px;
 
-    .classes {
-        .classes_header {
-            padding: 31px 0;
-            margin-bottom: 8px;
+			span {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+			}
 
-            span {
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 24px;
-            }
+			p {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 18px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		.classes_text {
+			font-size: 14px;
+			line-height: normal;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+	}
 
-            p {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 18px;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-        }
-        .classes_text {
-            font-size: 14px;
-            line-height: normal;
-            margin: 0 auto;
-            margin-bottom: 30px;
-        }
-    }
+	.texts {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
 
-    .description {
-        font-size: 14px;
-    }
+		.text_wrap {
+			display: flex;
+			align-items: flex-start;
+            flex-direction: column;
+			gap: 5px;
+			margin-bottom: 10px;
 
-    .decor {
-        height: auto !important;
-        object-fit: contain;
-        height: fit-content;
-    }
+			h4 {
+				font-size: 16px;
+			}
+
+			.description {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.decor {
+		height: auto !important;
+		object-fit: contain;
+		height: fit-content;
+	}
 }
