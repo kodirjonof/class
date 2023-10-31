@@ -97,7 +97,9 @@ const Decorclass = () => {
 	return (
 		<>
 			<Helmet>
+				<meta charSet='utf-8' />
 				<title>ALUCLASS | Decorclass</title>
+				<link rel='canonical' href='/decorclass' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='classes'>

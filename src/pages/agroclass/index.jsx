@@ -19,7 +19,9 @@ const Agroclass = () => {
 	return (
 		<>
 			<Helmet>
+				<meta charSet='utf-8' />
 				<title>ALUCLASS | Agroclass</title>
+				<link rel='canonical' href='/agroclass' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='classes'>

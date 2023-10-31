@@ -128,7 +128,9 @@ const Home = () => {
 	return (
 		<>
 			<Helmet>
+				<meta charSet='utf-8' />
 				<title>ALUCLASS | {t('home.main')}</title>
+				<link rel='canonical' href='/' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='home'>

@@ -14,7 +14,9 @@ const ContactPage = () => {
 	return (
 		<>
 			<Helmet>
+				<meta charSet='utf-8' />
 				<title>ALUCLASS | {t('header.contact')}</title>
+				<link rel='canonical' href='/contact' />
 			</Helmet>
 			<Header logo={logo} />
 			<Contact
