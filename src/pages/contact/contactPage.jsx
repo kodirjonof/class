@@ -16,7 +16,7 @@ const ContactPage = () => {
 			<Helmet>
 				<meta charSet='utf-8' />
 				<title>ALUCLASS | {t('header.contact')}</title>
-				<link rel='canonical' href='/contact' />
+				<link rel='canonical' href='https://uzclasses.uz/contact' />
 			</Helmet>
 			<Header logo={logo} />
 			<Contact

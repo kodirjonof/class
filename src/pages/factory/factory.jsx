@@ -1,34 +1,33 @@
-import React from 'react';
-import Header from '../../layout/header';
-import Contact from '../../component/contact';
-import Footer from '../../layout/footer';
-import "./factory.scss"
+import React from 'react'
+import Header from '../../layout/header'
+import Contact from '../../component/contact'
+import Footer from '../../layout/footer'
+import './factory.scss'
 
-import logo from "../../public/svg/ALUCLASS.svg"
-import logo2 from "../../public/svg/ALUCLASS2.svg"
-import photo from "../../public/factory/our.jpg"
-import photo2 from "../../public/factory/our2.jpg"
-import photo3 from "../../public/factory/our3.jpg"
-import photo4 from "../../public/factory/our4.jpg"
-import photo5 from "../../public/factory/our5.jpg"
-import photo6 from "../../public/factory/our6.jpg"
-import photo7 from "../../public/factory/our7.jpg"
-import photo8 from "../../public/factory/our8.jpg"
-import photo9 from "../../public/factory/our9.jpg"
-import photo10 from "../../public/factory/our10.jpg"
-import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet';
-
+import logo from '../../public/svg/ALUCLASS.svg'
+import logo2 from '../../public/svg/ALUCLASS2.svg'
+import photo from '../../public/factory/our.jpg'
+import photo2 from '../../public/factory/our2.jpg'
+import photo3 from '../../public/factory/our3.jpg'
+import photo4 from '../../public/factory/our4.jpg'
+import photo5 from '../../public/factory/our5.jpg'
+import photo6 from '../../public/factory/our6.jpg'
+import photo7 from '../../public/factory/our7.jpg'
+import photo8 from '../../public/factory/our8.jpg'
+import photo9 from '../../public/factory/our9.jpg'
+import photo10 from '../../public/factory/our10.jpg'
+import { useTranslation } from 'react-i18next'
+import { Helmet } from 'react-helmet'
 
 export default function Factory() {
-  const [t] = useTranslation("global")
+	const [t] = useTranslation('global')
 
-  return (
+	return (
 		<>
 			<Helmet>
 				<meta charSet='utf-8' />
 				<title>ALUCLASS | Factory</title>
-				<link rel='canonical' href='/factory' />
+				<link rel='canonical' href='https://uzclasses.uz/factory' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='container factory'>

@@ -99,7 +99,7 @@ const Decorclass = () => {
 			<Helmet>
 				<meta charSet='utf-8' />
 				<title>ALUCLASS | Decorclass</title>
-				<link rel='canonical' href='/decorclass' />
+				<link rel='canonical' href='https://uzclasses.uz/decorclass' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='classes'>

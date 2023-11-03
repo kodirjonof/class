@@ -21,7 +21,7 @@ const Agroclass = () => {
 			<Helmet>
 				<meta charSet='utf-8' />
 				<title>ALUCLASS | Agroclass</title>
-				<link rel='canonical' href='/agroclass' />
+				<link rel='canonical' href='https://uzclasses.uz/agroclass' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='classes'>

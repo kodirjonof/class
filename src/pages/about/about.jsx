@@ -17,7 +17,7 @@ const About = () => {
 			<Helmet>
 				<meta charSet='utf-8' />
 				<title>ALUCLASS | {t('header.company')}</title>
-				<link rel='canonical' href='/about' />
+				<link rel='canonical' href='/https://uzclasses.uz/about' />
 			</Helmet>
 			<Header logo={logo} />
 			<div className='about'>
